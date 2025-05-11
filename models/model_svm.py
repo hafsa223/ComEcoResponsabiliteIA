@@ -20,7 +20,7 @@ class ModelSVM:
         self.x_test = self.scaler.transform(x_test)
 
     def augment_data(self):
-        original_labels = np.ravel(self.train_labels.copy())  # <- Copie sûre
+        original_labels = np.ravel(self.train_labels.copy())  
         repeat_factor = 5
         self.x_train = np.tile(self.x_train, (repeat_factor, 1))        # 5000 → 25000
         self.train_labels = np.tile(original_labels, repeat_factor)    # 5000 → 25000
