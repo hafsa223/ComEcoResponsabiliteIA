@@ -1,0 +1,7 @@
+tensorflow>=2.9.0
+matplotlib>=3.5
+seaborn>=0.11
+scikit-learn>=1.0
+codecarbon>=2.1
+numpy>=1.22
+pandas>=1.3
